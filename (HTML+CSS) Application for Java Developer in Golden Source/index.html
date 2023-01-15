@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" type="C:\Users\Vivek\Desktop\(HTML+CSS) Application for Java Developer in Golden Source/style" href="/style.css">
+</head>
+<body>
+    
+
+    
+    
+    <div id="outside">
+    <form id="survey-form" action="/my-handling-form-page" method="post">
+      <h1 id="title">Application for Java Developer in Golden Source</h1>
+      <p id="description"><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+      
+      <!-- ------------------Personal Details---------------------------- -->
+      <fieldset>
+        <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+        <legend>Personal Details</legend>
+        <!-- formally describes the purpose of the fieldset it is included inside. -->
+        <div>
+          <label id="name-label" for="name">Candidate Name:</label>
+          <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+        <div>
+          <label for="address-label">Candidate Address:</label>
+          <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+        <div>
+          <label id="email-label" for="Email">Candidate Email:</label>
+          <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+        <div>
+          <label id="email-label" for="Email">Candidate Phone Number:</label>
+          <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+        
+    
+        <!-- ------------------Radio Buttons-------------------------------- -->
+        <div>
+          <label for="Gender">Gender</label>
+                 <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+         
+        </div>
+        <label for="date-label">Birth of Date:</label>
+        <input type="date" name="bday">
+      
+      </fieldset>
+      <!-- ------------------Checkboxes-------------------------------- -->
+      <fieldset>
+        <label for="Gender">Skill acquired</label>
+        <p>
+          <input type="checkbox" name="tattoo" value="tattoo"> CORE JAVA<br>
+          <input type="checkbox" name="age" value="Car"> ADVANCE JAVAr<br>
+          <input type="checkbox" name="car" value="car"> JDBC<br>
+          <input type="checkbox" name="work" value="work" checked> SERVLET<br>
+          <input type="checkbox" name="rich" value="rich" checked> JSP<br>
+          <input type="checkbox" name="rich" value="rich" checked> HTML<br>
+          <input type="checkbox" name="rich" value="rich" checked> CSS<br>
+          <input type="checkbox" name="rich" value="rich" checked> JS<br>
+          <input type="checkbox" name="rich" value="rich" checked> HIBERNATE FRAMEWORK<br>
+          <input type="checkbox" name="rich" value="rich" checked> SPRING FRAMEWORK<br>
+          
+        </p>
+      </fieldset>
+      
+      <!-- -----------------Dropdown menus--------------------------------- -->
+      
+      <fieldset>
+        <div>
+          <label for="politics">Job Location:</label>
+          <select id="dropdown">
+      <option value="left">Mumbai</option>
+      <option value="right">Navi Mumbai</option>
+      <option value="conservative">Thane</option>
+      <option value="nazi">Pune</option>
+      </select>
+    
+          <label for="politics">Education Level Completed:</label>
+          <select id="dropdown2">
+      <option value="University">University</option>
+      <option value="College">College</option>
+      <option value="Secondary">High School</option>  
+      <option value="None">None</option>
+      </select>
+        </div>
+      </fieldset>
+    
+      <!-- --------------------Text Areas------------------------------ -->
+      
+      <fieldset>
+        <legend>Academic Project</legend>
+        <div>
+          <label for="msg"></label>
+          <p>Java developer relevant project</p>
+          <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+        <div>
+          <label for="msg">Enter here project GitHub link</label><br>
+          <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+        <p>Attached here project files:
+          <button>Attach Files</button></p>
+      </fieldset>
+    
+      <div id="submitbutton">
+        <button type="submit" id="submit">Send your application</button>   </div>
+    
+    </form>
+      </div>
+    
+   
+
+
+
+
+</body>
+</html>
